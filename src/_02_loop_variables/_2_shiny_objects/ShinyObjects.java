@@ -6,6 +6,7 @@ import java.applet.AudioClip;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.swing.JApplet;
+import javax.swing.JOptionPane;
 
 
 public class ShinyObjects {
@@ -14,7 +15,11 @@ public class ShinyObjects {
 		// 1. Call the method below to play the sound
 		// 2. Ask the user how many shiny objects they want
 		// 3. Play the sound that many times
-
+String times1 = JOptionPane.showInputDialog("How many times would you like me to play a shiny objects sound?");
+int times = Integer.parseInt(times1);
+for (int i = 0; i < times; i++) {
+	playMisterZee();
+}
 
 
 	}
