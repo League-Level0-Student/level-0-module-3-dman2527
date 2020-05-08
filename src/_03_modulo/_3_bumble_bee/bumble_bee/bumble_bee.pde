@@ -4,10 +4,33 @@ void setup() {
      size(500, 500);
      background(160, 160, 160);
      drawFlower(350, 100);
+
+
+
+
+
+
+
+
 }
 
 void draw() {
-  
+  int x = 50;
+int y = 50;
+int r = 99;
+for (int i = 0; i < 18; i++) {
+  if (r %2 == 0){
+  fill(#030000);
+  }
+  if(r%2==1){
+   fill(#F6FF03); 
+  }
+  ellipse(x,y,25,25);
+x = x+10;
+y = y+10;
+r = r - 1;
+}
+drawBeeFace(240,240);
 // First run the program and you should see a flower.  
   
   
